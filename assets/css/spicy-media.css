@@ -1,0 +1,77 @@
+@media (max-width: 1024px) {
+  .imge-anime img {
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+  }
+  .image-anime img {
+    max-width: 100%;
+  }
+  .heros-content {
+    width: 100%;
+  }
+  .hero-circle-img-1 figure,
+  .hero-circle-img-2 figure {
+    max-width: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-circle-img-1 figure,
+  .hero-circle-img-2 figure {
+    max-width: 100px;
+  }
+  .menu-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .about-inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column-reverse;
+  }
+  .about-content {
+    margin-top: 42px;
+  }
+}
+@media (max-width: 991px) {
+  header nav {
+    display: none;
+  }
+  .menu-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .header-btn {
+    display: none;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #222;
+    text-align: left;
+    padding: 20px 30px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  .menu-inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
